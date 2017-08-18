@@ -49,8 +49,10 @@ public class MyJobs extends AppCompatActivity implements Serializable, ItemClick
     int vcbvbvbcvbcbvcvbcbvyugigtuycvbc;
 int asjdsjkfhdsfhd;
     int a = 4;
+    int tempvar = 100 ;
     String[] timesplitted;
-    int asdsd=2;
+    int aa = 10 ;
+    int aasdfasdfasdfsdfa =  5 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
