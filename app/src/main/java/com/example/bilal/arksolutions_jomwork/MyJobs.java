@@ -47,7 +47,7 @@ public class MyJobs extends AppCompatActivity implements Serializable, ItemClick
     ItemClickListener listener;
     String am_pm, min;
     int vcbvbvbcvbcbvcvbcbvyugigtuycvbc;
-
+int asjdsjkfhdsfhd;
     int a = 4;
     String[] timesplitted;
 
