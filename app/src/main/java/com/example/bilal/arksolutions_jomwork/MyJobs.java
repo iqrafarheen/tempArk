@@ -52,6 +52,7 @@ int asjdsjkfhdsfhd;
     int tempvar = 100 ;
     String[] timesplitted;
     int aa = 10 ;
+    int aasdfasdfasdfsdfa =  5 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
