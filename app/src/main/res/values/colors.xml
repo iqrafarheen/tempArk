@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EA2127</color>
+    <color name="colorPrimaryDark">#FFCB1D22</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color_form">#DBDEE5</color>
+    <color name="darker_gray_box">#6D6E72</color>
+    <color name="fb_login">#1883D7</color>
+    <color name="golden">#cba93b</color>
+
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#faf9f9"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_signup"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar_signup">
+    <LinearLayout
+        android:id="@+id/forms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_signup"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_fifteen"
+            android:layout_marginTop="@dimen/size_ten"
+            android:gravity="center"
+
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_twenty_five" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_five"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_ten"
+            android:gravity="left"
+            android:text="Name :"
+            android:textColor="@color/darker_gray_box"
+            android:textSize="@dimen/text_size_eighteen"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/name_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_five"
+            android:background="@drawable/edit_text_selector">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/name_input_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-0dp"
+                android:layout_toRightOf="@+id/lock_icon"
+                android:background="@android:color/transparent"
+                android:hint="Name"
+                android:padding="@dimen/size_ten"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_five"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_fifteen"
+            android:gravity="left"
+            android:text="Email :"
+            android:textColor="@color/darker_gray_box"
+            android:textSize="@dimen/text_size_eighteen"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/email_box_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_five"
+            android:background="@drawable/edit_text_selector">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/email_input_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-0dp"
+                android:layout_toRightOf="@+id/lock_icon"
+                android:background="@android:color/transparent"
+                android:hint="example@email.com"
+                android:padding="@dimen/size_ten"
+                android:inputType="textEmailAddress"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_five"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_fifteen"
+            android:gravity="left"
+            android:text="Password :"
+
+            android:textColor="@color/darker_gray_box"
+            android:textSize="@dimen/text_size_eighteen"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/password_box_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_five"
+            android:background="@drawable/edit_text_selector">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/pasword_input_signup"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-0dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/size_ten"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_five"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_fifteen"
+            android:gravity="left"
+            android:text="Re-Password :"
+            android:textColor="@color/darker_gray_box"
+            android:textSize="@dimen/text_size_eighteen"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/re_password_box_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_thirty_five"
+            android:layout_marginRight="@dimen/size_thirty_five"
+            android:layout_marginTop="@dimen/size_ten"
+            android:background="@drawable/edit_text_selector">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/re_pasword_input_signup"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-0dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:padding="@dimen/size_ten"
+                android:inputType="textPassword"
+                android:text="" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_signup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_fifty"
+            android:layout_marginLeft="@dimen/size_fifty_five"
+            android:layout_marginRight="@dimen/size_fifty_five"
+            android:layout_marginTop="@dimen/size_fifty"
+            android:background="@drawable/button_selector"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_eighteen"
+
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

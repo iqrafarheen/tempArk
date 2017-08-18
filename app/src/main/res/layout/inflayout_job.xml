@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!-- <FrameLayout
+         android:id="@+id/frame_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/navigation"
+         android:animateLayoutChanges="true">
+
+     </FrameLayout>-->
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!---->
+    <!--android:id="@+id/scroll">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_one"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_ten"
+        android:layout_marginLeft="@dimen/size_fourty"
+        android:layout_marginRight="@dimen/size_fourty"
+        android:layout_marginTop="@dimen/size_ten"
+        android:background="@android:color/darker_gray"
+        android:gravity="bottom"
+        android:visibility="visible"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1.5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/job_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_twenty"
+                    android:layout_marginLeft="@dimen/size_twenty"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:text="Cashier"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_eighteen" />
+
+                <ImageView
+                    android:id="@+id/urgent_job_tag"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_weight="1"
+                    android:src="@drawable/urgent_job_tag" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/industry"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Industry" />
+
+                <TextView
+                    android:id="@+id/industry_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/vacancy_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Vacancy" />
+
+                <TextView
+                    android:id="@+id/vacancy_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/datetowork_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Date to work" />
+
+                <TextView
+                    android:id="@+id/datetowork_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/location_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Location" />
+
+                <TextView
+                    android:id="@+id/location_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+                    android:layout_weight="1"
+                    android:maxLines="5"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/duration_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Duration" />
+
+                <TextView
+                    android:id="@+id/duration_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/rm_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Rate/Hour" />
+
+                <TextView
+                    android:id="@+id/rm_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/time_start"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="Time to Start" />
+
+                <TextView
+                    android:id="@+id/time_start_value"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_fourty"
+                    android:layout_below="@+id/job_heading"
+                    android:layout_marginLeft="@dimen/size_twenty"
+
+                    android:layout_weight="1"
+                    android:text="F&amp;B" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bid"
+                android:layout_width="@dimen/size_eighty"
+
+                android:layout_height="@dimen/size_thirty_five"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_fifty"
+                android:background="@drawable/bid_selector"
+                android:gravity="center"
+                android:text="Apply"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_sixteen"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/size_hundred"
+                android:layout_height="@dimen/size_eighty"
+                android:id="@+id/diability_image"
+                android:layout_below="@id/bid"
+                android:layout_marginRight="@dimen/size_thirty_five"
+                android:visibility="visible"
+                android:padding="@dimen/size_ten"
+                android:layout_marginTop="@dimen/size_ten"
+                android:src="@drawable/preffer_badge_2" />
+            <ImageView
+                android:layout_width="@dimen/size_hundred"
+                android:layout_height="@dimen/size_eighty"
+                android:id="@+id/non_physical_image"
+                android:layout_below="@id/bid"
+                android:padding="@dimen/size_ten"
+                android:visibility="visible"
+                android:layout_marginRight="@dimen/size_thirty_five"
+
+                android:src="@drawable/mentality_badge" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

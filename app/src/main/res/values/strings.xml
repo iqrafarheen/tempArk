@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ArkSolutions-JomWork</string>
+    <!--  <string name="app_id">1032602033522917</string>-->
+    <string name="app_id">129750804282884</string>
+    <string name="unable_to_find_location">Unable to detect New location</string>
+    <string name="enable_provider">Please enable location from your device settings</string>
+    <string name="settings">setting</string>
+    <string name="cancel">cancel</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="interest_array">
+        <item>F&amp;B</item>
+        <item>FMCG</item>
+        <item>Retail</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="vacancy_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="job_type">
+        <item>Urgent</item>
+        <item>Planned</item>
+    </string-array>
+
+</resources>

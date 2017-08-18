@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bilal.arksolutions_jomwork.Notifications">
+
+    <include
+        android:id="@+id/detail_toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_toolbar"
+        android:layout_marginTop="@dimen/size_five"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="Notifications Alert"
+        android:textSize="@dimen/text_size_twenty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_fifteen"
+                android:layout_marginRight="@dimen/size_fifteen"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/jobtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Job Type" />
+
+                <TextView
+                    android:id="@+id/jobtype_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+                    android:text="F&amp;B"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Duration" />
+
+                <TextView
+                    android:id="@+id/duration_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+
+                    android:text="5 Days"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_one"
+            android:layout_marginLeft="@dimen/size_fifteen"
+            android:layout_marginRight="@dimen/size_fifteen"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/size_fifteen"
+                android:layout_marginRight="@dimen/size_fifteen"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Industry" />
+
+                <TextView
+                    android:id="@+id/industry_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+                    android:text="F&amp;B"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vacancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Vacancy" />
+
+                <TextView
+                    android:id="@+id/vacancy_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+
+                    android:text="5"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_one"
+            android:layout_marginLeft="@dimen/size_fifteen"
+            android:layout_marginRight="@dimen/size_fifteen"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_fifteen"
+                android:layout_marginRight="@dimen/size_fifteen"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dateofwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Date of Work" />
+
+                <TextView
+                    android:id="@+id/dateofwork_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+                    android:text="F&amp;B"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Location" />
+
+                <TextView
+                    android:id="@+id/location_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+
+                    android:text="5 Days"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_one"
+            android:layout_marginLeft="@dimen/size_fifteen"
+            android:layout_marginRight="@dimen/size_fifteen"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_fifteen"
+                android:layout_marginRight="@dimen/size_fifteen"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Rate Per Hour" />
+
+                <TextView
+                    android:id="@+id/rm_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+                    android:text="F&amp;B"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timetowork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Time To Work" />
+
+                <TextView
+                    android:id="@+id/time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/size_five"
+                    android:layout_marginTop="@dimen/size_eight"
+                    android:layout_weight="1"
+
+                    android:text="5 Days"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_one"
+            android:layout_marginLeft="@dimen/size_fifteen"
+            android:layout_marginRight="@dimen/size_fifteen"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/joblistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data"
+        android:layout_margin="@dimen/size_fifteen"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/noCandidate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/data"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No Applicants "
+        android:visibility="visible" />
+
+</RelativeLayout>
+

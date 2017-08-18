@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iconname"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/size_hundred_eighty"
+            android:layout_height="@dimen/size_hundred_eighty"
+            android:src="@drawable/jom_work_logo" />
+
+        <TextView
+            android:id="@+id/textsplash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconname"
+           android:gravity="center"
+            android:text="Jom Work"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/size_fifteen"
+            android:textSize="@dimen/text_size_twenty_five" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textsplash"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textSize="@dimen/text_size_twenty_five"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/size_hundred"
+        android:layout_height="@dimen/size_fifty"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:visibility="gone"
+      />
+
+</RelativeLayout>
